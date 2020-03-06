@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Style and title -->
+    <title>Main</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A site where I learn and train in HTML,CSS and JS.">
+    <meta name="keywords" content="HTML,CSS,JS,Learning,Programing,Web,Web Design">
+    <meta name="author" content="Craciunoiu Petru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+
+
+    function button(){
+    	alert("Thank you!");}
+
+    </script>
+
+
+    <style>
+
+    .center{
+    	text-align:center;
+    }
+
+    .centerShadow{
+    	text-align:center;
+    	text-shadow:5px 5px 10px #f8cf76;
+    }
+
+    .colorY{
+    color:#f4af1b;
+    }
+
+    .border{
+    	border-style:solid;
+    	border-width:1px;
+    	border-radius:20px;
+    	border-spacing:100px;
+    }
+
+    .footer {
+    	position: down;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	text-align: center;
+    }
+
+    .nice{
+    	color:#f4af1b;
+    	background-color:#00154f;
+    	background-image: linear-gradient(#00154f,#002382,#00154f);
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	font-family:Arial;
+    }
+
+    a:hover{
+    	color:#f8cf76;
+    }
+
+    .text{
+    	background-image: linear-gradient(#00154f,#002382,#00154f);
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	color:#f4af1b;
+    }
+
+    .button {
+    	background-color:#002382;
+    	color:#f4af1b;
+    	box-shadow:1px 2px #000a24;
+    }
+
+    </style>
+  </head>
+
+  <!-- Here starts the site -->
+
+  <body class="nice" onload="checkCookie()">
+
+  <header>
+  <h1 class="centerShadow">Learning <strong>HTML</strong> and <strong> CSS</strong> Site</h1><br>
+  </header>
+
+
+  <nav>
+
+  <div class="border">
+
+  <ul class="colorY">
+  	<li><a href="#" class="colorY" target=""><strong>Main Page</strong></a>
+  	<li><a href="#" class="colorY" target=""><strong>About</strong></a>
+  	<li><a href="#" class="colorY" target=""><strong>Articles</strong></a>
+  </ul>
+
+  </div>
+
+  </nav>
+
+
+  <article>
+
+  <div class="center">
+
+  <h2>This site is under construction!</h2>
+  <h2>(If it isn't working proprely,we are sorry)</h2><br>
+  </div>
+
+  <p>This is a site where I am learning HTML,CSS and JS.It's still<strong><em> under construction!After my exams I will work more on the site,but until then this is the site.</em></strong></p>
+  <p>Thanks to <strong>Sololearn,Mimo,W3School,Github,Atom</strong> and many others for helping me make my own site!</p><br>
+  <p><strong>Contact:</strong></p>
+
+  <form action="" target="_blank">
+
+  <ul>
+  	<li><strong>Name:</strong>
+  <input class="text" style="border-color:#f4af1b;box-shadow:1px 2px #000a24;" type="text" name="name"><br><br>
+  	<li><strong>Email:</strong>
+  <input class="text" style="border-color:#f4af1b;box-shadow:1px 2px #000a24;" type="email" name="email"><br><br>
+  	<li><strong>Message:</strong>
+  <input class="text" style="border-color:#f4af1b;box-shadow:1px 2px #000a24;" type="text" name="message">
+  </ul>
+
+  <input class="button" style="border-color:#f4af1b;" type="submit" onclick="button()">
+  <input class="button" style="border-color:#f4af1b;" type="reset"><br><br><br><br>
+
+  <h3>On a scale of 1 to 5,what will you give this site?<h3>
+
+  <input class="button" style="border-color:#f4af1b;" type="number" name="rating" min="1" max="5">
+  <input class="button" style="border-color:#f4af1b;" type="submit" onclick="button()"><br><br>
+
+  </form>
+
+  <p>Thank you for visiting my site!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  </article>
+
+
+  <footer class="footer">
+  <h5>All Author and Distribution Rights belong to © Craciunoiu Petru</h5>
+  </footer>
+
+  </body>
+</html>
