@@ -1,0 +1,54 @@
+    .center{
+    	text-align:center;
+    }
+
+    .centerShadow{
+    	text-align:center;
+    	text-shadow:5px 5px 10px #f8cf76;
+    }
+
+    .colorY{
+    color:#f4af1b;
+    }
+
+    .border{
+    	border-style:solid;
+    	border-width:1px;
+    	border-radius:20px;
+    	border-spacing:100px;
+    }
+
+    .footer{
+    	position: down;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	text-align: center;
+    }
+
+    .nice{
+    	color:#f4af1b;
+    	background-color:#00154f;
+    	background-image: linear-gradient(#00154f,#002382,#00154f);
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	font-family:Arial;
+    }
+
+    a:hover{
+    	color:#f8cf76;
+    }
+
+    .text{
+    	background-image: linear-gradient(#00154f,#002382,#00154f);
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	color:#f4af1b;
+    }
+
+    .button{
+    	background-color:#002382;
+    	color:#f4af1b;
+    	box-shadow:1px 2px #000a24;
+      border-color:#f4af1b;
+    }
