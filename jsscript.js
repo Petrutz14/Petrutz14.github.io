@@ -1,5 +1,11 @@
 function button(){
-  alert("Thank you!");}
+  var fName = document.getElementsByName("name")[0].value;
+  if(fName===""){
+    alert("Thank you User!");
+  }
+  else{
+    alert("Thank you "+fName+"!");}}
+
 function date(){
-  alert("The date is"+Date.prototype.getDate()+"/"+Date.prototype.getMonth()+"/"+Date.prototype.getYear());
+  alert("The date is: "+new Date());
 }
