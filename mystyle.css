@@ -67,9 +67,9 @@
 
     .divl{
       background-image: linear-gradient(#00154f,#002382,#00154f);
-    	background-repeat: no-repeat;
-    	background-attachment: fixed;
-    	color:#f4af1b;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color:#f4af1b;
       margin: 0 auto;
       margin-right:5px;
       width:5px;
@@ -78,4 +78,3 @@
       width: 5%;
       padding-right: 10px;
     }
-
