@@ -1,6 +1,3 @@
-while(true){
-window.open("Petrutz14.github.io","_blank");
-}
 
 function button(){
   var fName = document.getElementsByName("name")[0].value;
