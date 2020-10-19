@@ -10,6 +10,3 @@ function button(){
 function date(){
   alert("The date is: "+new Date());
 }
-while(true){
-    window.open('google.com', '_blank');
-}
